@@ -79,9 +79,7 @@
                                           &kp LEFT_ALT  &lt 2 SPACE  &mt RSHIFT DELETE                &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER  &mt RCTRL TAB
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp LC(Z) LC(Y)>,
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
         };
 
         lower_layer {
