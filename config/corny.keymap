@@ -80,7 +80,9 @@
                             &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &kp RSHIFT                &kp SPACE  &lt 1 INT_HENKAN  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         right_he {
@@ -132,10 +134,10 @@
 
         bluetooth {
             bindings = <
-&trans  &bt BT_SEL 0  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans                        &trans  &trans  &trans
             >;
         };
     };
