@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&trans  &kp SLASH  &kp N7        &kp N8        &kp N9        &kp ASTERISK                     &kp N6    &kp N7    &kp UP_ARROW  &kp N9           &kp N0   &trans
-&trans  &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS                         &kp HOME  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END  &kp END
-&trans  &kp F1     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &kp K_MUTE  &none  &kp F6    &kp F7    &kp F8        &kp F9           &kp F10  &kp F11
-                                 &trans        &kp N0        &trans                           &trans    &trans    &trans
+&trans  &kp SLASH  &kp N7        &kp N8        &kp N9        &kp KP_ASTERISK                     &kp N6    &kp N7    &kp UP_ARROW  &kp N9           &kp N0   &trans
+&trans  &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS                         &kp HOME  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END  &kp END
+&trans  &kp F1     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp K_MUTE  &none  &kp F6    &kp F7    &kp F8        &kp F9           &kp F10  &kp F11
+                                 &trans        &kp N0        &trans                              &trans    &trans    &trans
             >;
 
             sensor-bindings =
@@ -112,10 +112,10 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&trans         &kp EXCL          &kp F12       &kp LG(E)     &kp LG(R)     &kp PRCNT                              &kp CARET          &kp MINUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp ASTERISK      &kp EQUAL
-&kp LESS_THAN  &kp SINGLE_QUOTE  &kp F2        &kp F4        &kp F10       &kp DOUBLE_QUOTES                      &kp DOUBLE_QUOTES  &kp BACKSPACE    &none                 &kp DELETE                &kp SINGLE_QUOTE  &kp GREATER_THAN
-&bt BT_CLR     &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &none  &bootloader  &kp PRINTSCREEN    &kp PAUSE_BREAK  &kp C_AL_TEXT_EDITOR  &kp C_AL_GRAPHICS_EDITOR  &kp PIPE          &kp TILDE
-                                               &trans        &trans        &trans                                 &kp ENTER          &trans           &trans
+&trans       &kp ESC           &kp F12       &kp LG(E)     &kp LG(R)     &kp PRCNT                              &kp CARET          &kp MINUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp ASTERISK      &kp EQUAL
+&kp LA(TAB)  &kp SINGLE_QUOTE  &kp F2        &kp F4        &kp F10       &kp DOUBLE_QUOTES                      &kp DOUBLE_QUOTES  &kp BACKSPACE    &none                 &kp DELETE                &kp SINGLE_QUOTE  &kp GREATER_THAN
+&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &none  &bootloader  &kp PRINTSCREEN    &kp PAUSE_BREAK  &kp C_AL_TEXT_EDITOR  &kp C_AL_GRAPHICS_EDITOR  &kp PIPE          &kp TILDE
+                                             &trans        &trans        &trans                                 &kp ENTER          &trans           &trans
             >;
 
             sensor-bindings =
