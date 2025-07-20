@@ -41,25 +41,39 @@
     };
 
     macros {
-        pa: pa {
+        Bluetooth1: Bluetooth2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp P &kp A &kp S &kp W &kp A &kp R &kp D>;
-            label = "PA";
+            bindings = <&bt BT_SEL 1 &to 5>;
+            label = "BLUETOOTH2";
         };
 
-        login: login {
+        Bluetooth0: bluetooth0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp O &kp G &kp I &kp N &kp I &kp D>;
-            label = "LOGIN";
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "BLUETOOTH0";
         };
 
-        mail: mail {
+        Bluetooth2: Bluetooth2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp M &kp A &kp I &kp L &kp AT &kp M &kp A &kp I &kp L &kp DOT &kp J &kp P>;
-            label = "MAIL";
+            bindings = <&bt BT_SEL 2 &to 0>;
+            label = "BLUETOOTH2";
+        };
+
+        Bluetooth3: Bluetooth3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3 &to 0>;
+            label = "BLUETOOTH3";
+        };
+
+        Bluetooth4: Bluetooth4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &to 0>;
+            label = "BLUETOOTH4";
         };
     };
 
@@ -134,10 +148,19 @@
 
         bluetooth {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans                        &trans  &trans  &trans
+&trans  &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3  &Bluetooth4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans       &trans       &trans                       &trans  &trans  &trans
+            >;
+        };
+
+        iOS1 {
+            bindings = <
+&lt 4 DEL  &kp Q  &kp W  &kp E   &kp R        &kp T                   &kp Y   &kp U             &kp I      &kp O    &kp P     &kp LBKT
+&kp TAB    &kp A  &kp S  &kp D   &kp F        &kp G                   &kp H   &kp J             &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C   &kp V        &kp B   &trans  &trans  &kp N   &kp M             &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &trans  &lt 2 LANG1  &trans                  &trans  &lt 1 LANGUAGE_2  &trans
             >;
         };
     };
