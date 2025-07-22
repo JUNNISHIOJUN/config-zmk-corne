@@ -48,7 +48,7 @@
             label = "BLUETOOTH2";
         };
 
-        Bluetooth0: bluetooth0 {
+        Bluetooth00: bluetooth0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &to 0>;
@@ -148,10 +148,10 @@
 
         bluetooth {
             bindings = <
-&trans  &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3  &Bluetooth4                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans       &trans       &trans       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans       &trans       &trans                       &trans  &trans  &trans
+&trans  &Bluetooth00  &Bluetooth1  &Bluetooth2  &Bluetooth3  &Bluetooth4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans       &trans       &trans       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans       &trans       &trans                       &trans  &trans  &trans
             >;
         };
 
