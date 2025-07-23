@@ -68,6 +68,13 @@
             bindings = <&bt BT_SEL 4 &to 0>;
             label = "BLUETOOTH4";
         };
+
+        Bluetooth0: Bluetooth0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "BLUETOOTH0";
+        };
     };
 
     keymap {
@@ -141,10 +148,10 @@
 
         bluetooth {
             bindings = <
-&trans  &Bluetooth00  &Bluetooth1  &Bluetooth2  &Bluetooth3  &Bluetooth4                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans       &trans       &trans       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans       &trans       &trans                       &trans  &trans  &trans
+&trans  &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3  &Bluetooth4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans       &trans       &trans                       &trans  &trans  &trans
             >;
         };
 
