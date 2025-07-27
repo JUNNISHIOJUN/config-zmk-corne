@@ -103,7 +103,7 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&trans       &kp ESC           &kp F12       &kp LG(E)     &kp LG(R)     &kp PRCNT                              &kp CARET          &kp MINUS        &kp LS(ASTRK)         &kp LS(NUMBER_9)          &kp ASTERISK      &kp EQUAL
+&none        &kp ESC           &kp F12       &kp LG(E)     &kp LG(R)     &kp PRCNT                              &kp CARET          &kp MINUS        &kp LS(ASTRK)         &kp LS(NUMBER_9)          &kp ASTERISK      &kp EQUAL
 &kp LA(TAB)  &kp SINGLE_QUOTE  &kp F2        &kp F4        &kp F10       &kp DOUBLE_QUOTES                      &kp DOUBLE_QUOTES  &kp BACKSPACE    &none                 &kp DELETE                &kp SINGLE_QUOTE  &kp GREATER_THAN
 &bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &none  &bootloader  &kp PRINTSCREEN    &kp PAUSE_BREAK  &kp C_AL_TEXT_EDITOR  &kp C_AL_GRAPHICS_EDITOR  &kp PIPE          &kp TILDE
                                              &trans        &trans        &trans                                 &kp ENTER          &trans           &trans
